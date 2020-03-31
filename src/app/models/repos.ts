@@ -20,9 +20,7 @@ export interface RepoDetails {
     id: number;
     name: string;
     full_name: string;
-    html_url: string;
     owner: Owner;
-    stargazers_count: number;
     watchers_count: number;
     language: string;
     created_at: string;

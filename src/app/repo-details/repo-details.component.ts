@@ -19,8 +19,6 @@ export class RepoDetailsComponent implements OnInit {
   getRepo(): void {
     const id = this.route.snapshot.paramMap.get('id');
     const owner = this.route.snapshot.paramMap.get('owner');
-    console.log('id',this.route.snapshot.paramMap)
-    console.log('owner',owner)
     this.githubService.getRepo(id, owner)
       .subscribe(res => {this.repo = res, console.log('res',res)});
   }
